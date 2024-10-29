@@ -1,0 +1,28 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables file
+.env
+
+# MacOS system files
+.DS_Store
+
+# Virtual environment directories
+venv/
+ENV/
+env/
+.venv/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
