@@ -21,13 +21,14 @@ This script gathers various types of information about a specified domain, such 
 
 1. Clone the Repository or Download the Script Files
    
-git clone https://github.com/TheeUnbothered/Web-Info.-Finder.git
-cd Web-Info.-Finder.git
+```git clone https://github.com/TheeUnbothered/Web-Info.-Finder.git```
+
+`cd Web-Info.-Finder.git`
 
 Install Required Python Packages
 Install the requests package, as it’s the only external Python package required:
 
-pip install requests
+`pip install requests`
 
 
    USAGE
