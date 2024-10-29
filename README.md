@@ -22,21 +22,18 @@ This script gathers various types of information about a specified domain, such 
 1. Clone the Repository or Download the Script Files
 
 ```bash
-pip install requests
-git clone https://github.com/your-username/your-repository-name.git
-cd your-repository-name
+git clone https://github.com/TheeUnbothered/Web-Info.-Finder.git
 ```
-
-
-
-git clone https://github.com/TheeUnbothered/Web-Info.-Finder.git```
-
-`cd Web-Info.-Finder.git`
+```bash
+cd Web-Info.-Finder.git
+```
 
 Install Required Python Packages
 Install the requests package, as it’s the only external Python package required:
 
-`pip install requests`
+```bash
+pip install requests
+```
 
 
    USAGE
