@@ -34,24 +34,39 @@ Install the requests package, as it’s the only external Python package require
 ```bash
 pip install requests
 ```
+Install dig Command-Line Tool for DNS Queries
+On Ubuntu/Debian:
+```bash
+sudo apt update
+sudo apt install dnsutils -y
+```
+On CentOS/RHEL:
+```bash
+sudo yum install bind-utils -y
+```
+On macOS (using Homebrew):
+```bash
+brew install bind
+```
 
-
-   USAGE
+## USAGE
 Run the script:
-
+```bash
 python run.py
-The script will clear the screen, display your styled name, and list available options. You will see the following options:
+```
+# You will see the following options:
 
 (1. IP Address)
 (2. HTTP Headers)
 (3. WHOIS Information)
 (4. DNS Records)
 (5. All of the above)
-Enter your choice (1-5) and provide the target domain (e.g., example.com or https://example.com).
+Enter your choice (1-5) and provide the target domain (e.g., theeunbothered.com or https://theeunbothered.com).
 
 The script will retrieve and display the information based on your choice.
 
-Example
+
+Example: 
 THEEUNBOTHERED
 
 Select the information you want to gather:
@@ -62,9 +77,12 @@ Select the information you want to gather:
 (5. All of the above)
 
 Enter your choice (1-5): 3
-Enter target domain (e.g., example.com or https://example.com): example.com
-Notes
+Enter target domain (e.g., example.com or https://theeunbothered.com): theeunbothered.com
+
+NOTES
+
 WHOIS API: You need a WHOIS XML API key to retrieve WHOIS information. Visit WHOIS XML API to get an API key.
+
 DNS Queries: The dig command is required for DNS queries. Ensure it is installed on your system.
 
 License
@@ -74,4 +92,6 @@ Happy domain information gathering!
 
 This `README.md` provides detailed instructions on setting up, configuring, and running your script. Let me know if there’s anything specific you’d like added or adjusted!
 
+# reach me 
+@ iwanttobehigh@gmail.com
 
