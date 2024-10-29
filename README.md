@@ -8,7 +8,7 @@ This script gathers various types of information about a specified domain, such 
 - **HTTP Headers**: Fetches HTTP headers of the given domain.
 - **WHOIS Information**: Fetches WHOIS information using the WHOIS XML API.
 - **DNS Records**: Retrieves DNS records (A, NS, MX, TXT) using the `dig` command.
-- **Styled User Interface**: Displays a styled name (`THEEUNBOTHERED`) at the top and uses color-coded options for clarity.
+- **Styled User Interface**: 
 
 ## Requirements
 
@@ -20,11 +20,14 @@ This script gathers various types of information about a specified domain, such 
 ## Setup
 
 1. Clone the Repository or Download the Script Files
+   
+git clone https://github.com/TheeUnbothered/Web-Info.-Finder.git
+cd Web-Info.-Finder.git
 
-git clone https://github.com/your-username/your-repository-name.git
-cd your-repository-name
+Install Required Python Packages
+Install the requests package, as it’s the only external Python package required:
 
-
+pip install requests
 
 
    USAGE
