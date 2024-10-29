@@ -21,17 +21,15 @@ This script gathers various types of information about a specified domain, such 
 
 1. Clone the Repository or Download the Script Files
 
-
-# This is a code block that will have a copy icon on platforms like GitHub
+```bash
 pip install requests
 git clone https://github.com/your-username/your-repository-name.git
 cd your-repository-name
+```
 
 
 
-
-   
-```git clone https://github.com/TheeUnbothered/Web-Info.-Finder.git```
+git clone https://github.com/TheeUnbothered/Web-Info.-Finder.git```
 
 `cd Web-Info.-Finder.git`
 
