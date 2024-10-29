@@ -3,8 +3,9 @@ import socket
 from urllib.parse import urlparse
 import subprocess
 from config import WHOIS_API_KEY  # Import the API key
+import os
 
-
+# ANSI color codes for styling
 class Colors:
     HEADER = '\033[95m'
     BLUE = '\033[94m'
@@ -13,11 +14,18 @@ class Colors:
     RED = '\033[91m'
     ENDC = '\033[0m'   # Reset color
 
+# Clear screen function
+def clear_screen():
+    if os.name == 'nt':  # For Windows
+        os.system('cls')
+    else:  # For macOS and Linux
+        os.system('clear')
 
+# Display name with styling
 def display_name():
-    print(f"{Colors.HEADER} WELCOME TO GET WEB INFO BY THEEUNBOTHERED{Colors.ENDC}\n")
+    print(f"{Colors.HEADER}WELCOME TO GET WEB INFO BY THEEUNBOTHERED{Colors.ENDC}\n")
 
-
+# WHOIS Information using WHOIS XML API
 def get_whois_info(domain):
     url = f"https://www.whoisxmlapi.com/whoisserver/WhoisService?apiKey={WHOIS_API_KEY}&domainName={domain}&outputFormat=json"
     try:
@@ -31,7 +39,7 @@ def get_whois_info(domain):
     except requests.RequestException as e:
         print(f"Error fetching WHOIS information: {e}")
 
-
+# IP Address Retrieval
 def get_ip_address(domain):
     try:
         ip = socket.gethostbyname(domain)
@@ -39,7 +47,7 @@ def get_ip_address(domain):
     except socket.error as e:
         print(f"Error resolving IP: {e}")
 
-
+# HTTP Headers Retrieval
 def get_http_headers(url):
     try:
         response = requests.get(url)
@@ -63,6 +71,9 @@ def get_dns_records(domain):
         print(f"Error fetching DNS records: {e}")
 
 def main():
+    # Clear the screen before displaying the interface
+    clear_screen()
+
     # Display the styled name
     display_name()
 
