@@ -19,17 +19,13 @@ This script gathers various types of information about a specified domain, such 
 
 ## Setup
 
-1. **Clone the repository** or download the script files to your local machine.
-2. **Create a configuration file** named `config.py` in the same directory as the script.
-3. In `config.py`, add your WHOIS API key as follows:
+1. Clone the Repository or Download the Script Files
 
-    ```python
-    WHOIS_API_KEY = "your_whois_xml_api_key_here"
-    ```
+git clone https://github.com/your-username/your-repository-name.git
+cd your-repository-name
 
-4. **Install dependencies**:
-   ```bash
-   pip install requests
+
+
 
    USAGE
 Run the script:
