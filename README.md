@@ -22,8 +22,6 @@ This script gathers various types of information about a specified domain, such 
 1. Clone the Repository or Download the Script Files
 
 
-
-```bash
 # This is a code block that will have a copy icon on platforms like GitHub
 pip install requests
 git clone https://github.com/your-username/your-repository-name.git
